@@ -71,6 +71,7 @@ function toRepoModel(r) {
     archived: Boolean(r.archived),
     private: Boolean(r.private),
     stargazersCount: typeof r.stargazers_count === 'number' ? r.stargazers_count : undefined,
+    forksCount: typeof r.forks_count === 'number' ? r.forks_count : undefined,
     imageUrl: r.imageUrl ?? null,
   };
 }

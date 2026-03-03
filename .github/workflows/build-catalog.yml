@@ -1,9 +1,10 @@
 name: Build catalog
 
 on:
-  workflow_dispatch: {}
-  schedule:
-    - cron: '17 3 * * *' # nightly
+  pull_request: {}
+  # workflow_dispatch: {}
+  # schedule:
+  #   - cron: '17 3 * * *' # nightly
 
 permissions:
   contents: write
@@ -36,6 +37,7 @@ jobs:
         run: node scripts/fetch-catalog.mjs
 
       - name: Commit changes (if any)
+        if: github.event_name != 'pull_request'
         run: |
           if [[ -z "$(git status --porcelain)" ]]; then
             echo "No changes to commit."

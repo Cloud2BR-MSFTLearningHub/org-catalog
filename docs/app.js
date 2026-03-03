@@ -18,7 +18,7 @@ const TRANSLATION_BATCH_SIZE = 50;
 const translationCacheByLang = new Map();
 const translationInFlightByLang = new Map();
 
-const UI_META_LABELS = ['Language', 'Updated', 'Archived'];
+const UI_META_LABELS = ['Language', 'Updated', 'Archived', 'Stars', 'Forks'];
 
 // Lightweight, client-side UI translations for GitHub Pages / no-backend mode.
 // This intentionally covers only the app chrome (labels, buttons, status messages).
@@ -38,6 +38,8 @@ const BUILTIN_UI_TRANSLATIONS = {
     Category: 'Categoría',
     Updated: 'Actualizado',
     Archived: 'Archivado',
+    Stars: 'Estrellas',
+    Forks: 'Bifurcaciones',
     All: 'Todos',
     'Any time': 'Cualquier momento',
     'Last 7 days': 'Últimos 7 días',
@@ -76,6 +78,8 @@ const BUILTIN_UI_TRANSLATIONS = {
     Category: 'Categoria',
     Updated: 'Atualizado',
     Archived: 'Arquivado',
+    Stars: 'Estrelas',
+    Forks: 'Forks',
     All: 'Todos',
     'Any time': 'Qualquer momento',
     'Last 7 days': 'Últimos 7 dias',
@@ -114,6 +118,8 @@ const BUILTIN_UI_TRANSLATIONS = {
     Category: 'Catégorie',
     Updated: 'Mis à jour',
     Archived: 'Archivé',
+    Stars: 'Etoiles',
+    Forks: 'Forks',
     All: 'Tous',
     'Any time': "N'importe quand",
     'Last 7 days': '7 derniers jours',
@@ -416,7 +422,7 @@ function captureUiStrings() {
   }
 }
 
-/** @typedef {{name:string, fullName:string, url:string, description:string, topics:string[], language:string|null, updatedAt:string, archived:boolean, private:boolean, stargazersCount?:number, imageUrl?:string|null}} Repo */
+/** @typedef {{name:string, fullName:string, url:string, description:string, topics:string[], language:string|null, updatedAt:string, archived:boolean, private:boolean, stargazersCount?:number, forksCount?:number, imageUrl?:string|null}} Repo */
 
 /** @type {{generatedAt?:string, org?:string, repos?:Repo[]}} */
 let publicCatalog = {};
@@ -618,7 +624,9 @@ function repoSearchScore(repo, tokens) {
 
   // Light tie-breaker boost
   const stars = typeof repo.stargazersCount === 'number' ? repo.stargazersCount : 0;
+  const forks = typeof repo.forksCount === 'number' ? repo.forksCount : 0;
   score += Math.min(stars, 50) / 10;
+  score += Math.min(forks, 50) / 15;
 
   return score;
 }
@@ -626,6 +634,24 @@ function repoSearchScore(repo, tokens) {
 function toTimeMs(iso) {
   const t = Date.parse(String(iso || ''));
   return Number.isFinite(t) ? t : 0;
+}
+
+function toCount(value) {
+  return typeof value === 'number' && Number.isFinite(value) ? value : 0;
+}
+
+function formatCount(value) {
+  return new Intl.NumberFormat(undefined).format(value);
+}
+
+function sortByPopularity(list) {
+  return Array.from(list).sort((a, b) => {
+    const starsDiff = toCount(b?.stargazersCount) - toCount(a?.stargazersCount);
+    if (starsDiff) return starsDiff;
+    const forksDiff = toCount(b?.forksCount) - toCount(a?.forksCount);
+    if (forksDiff) return forksDiff;
+    return toTimeMs(b?.updatedAt) - toTimeMs(a?.updatedAt);
+  });
 }
 
 function getFilters() {
@@ -709,6 +735,8 @@ function render(list) {
   const langLabel = translateText(activeUiLang, 'Language');
   const updatedLabel = translateText(activeUiLang, 'Updated');
   const archivedLabel = translateText(activeUiLang, 'Archived');
+  const starsLabel = translateText(activeUiLang, 'Stars');
+  const forksLabel = translateText(activeUiLang, 'Forks');
 
   gridEl.replaceChildren(
     ...list.map((repo) => {
@@ -745,7 +773,11 @@ function render(list) {
       const language = repo.language ? `${langLabel}: ${repo.language}` : `${langLabel}: —`;
       const updated = repo.updatedAt ? `${updatedLabel}: ${formatDate(repo.updatedAt)}` : `${updatedLabel}: —`;
       const archived = repo.archived ? archivedLabel : '';
-      meta.textContent = [language, updated, archived].filter(Boolean).join(' • ');
+      const starsValue = typeof repo.stargazersCount === 'number' ? repo.stargazersCount : null;
+      const forksValue = typeof repo.forksCount === 'number' ? repo.forksCount : null;
+      const stars = starsValue === null ? '' : `${starsLabel}: ${formatCount(starsValue)}`;
+      const forks = forksValue === null ? '' : `${forksLabel}: ${formatCount(forksValue)}`;
+      meta.textContent = [language, updated, stars, forks, archived].filter(Boolean).join(' • ');
 
       card.append(title, desc, meta);
 
@@ -823,10 +855,16 @@ function update() {
 
     scored.sort((a, b) => {
       if (b.score !== a.score) return b.score - a.score;
+      const starsDiff = toCount(b.repo?.stargazersCount) - toCount(a.repo?.stargazersCount);
+      if (starsDiff) return starsDiff;
+      const forksDiff = toCount(b.repo?.forksCount) - toCount(a.repo?.forksCount);
+      if (forksDiff) return forksDiff;
       return toTimeMs(b.repo.updatedAt) - toTimeMs(a.repo.updatedAt);
     });
 
     filtered = scored.map((x) => x.repo);
+  } else {
+    filtered = sortByPopularity(filtered);
   }
 
   const label = activeView === 'public' ? 'public' : 'private';
