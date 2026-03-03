@@ -773,13 +773,29 @@ function render(list) {
       const language = repo.language ? `${langLabel}: ${repo.language}` : `${langLabel}: —`;
       const updated = repo.updatedAt ? `${updatedLabel}: ${formatDate(repo.updatedAt)}` : `${updatedLabel}: —`;
       const archived = repo.archived ? archivedLabel : '';
-      const starsValue = typeof repo.stargazersCount === 'number' ? repo.stargazersCount : null;
-      const forksValue = typeof repo.forksCount === 'number' ? repo.forksCount : null;
-      const stars = starsValue === null ? '' : `${starsLabel}: ${formatCount(starsValue)}`;
-      const forks = forksValue === null ? '' : `${forksLabel}: ${formatCount(forksValue)}`;
-      meta.textContent = [language, updated, stars, forks, archived].filter(Boolean).join(' • ');
+      meta.textContent = [language, updated, archived].filter(Boolean).join(' • ');
 
-      card.append(title, desc, meta);
+      const stats = document.createElement('div');
+      stats.className = 'stats';
+
+      const starsValue = toCount(repo.stargazersCount);
+      const forksValue = toCount(repo.forksCount);
+
+      const starStat = document.createElement('span');
+      starStat.className = 'stat';
+      starStat.textContent = `★ ${formatCount(starsValue)}`;
+      starStat.title = `${starsLabel}: ${formatCount(starsValue)}`;
+      starStat.setAttribute('aria-label', starStat.title);
+
+      const forkStat = document.createElement('span');
+      forkStat.className = 'stat';
+      forkStat.textContent = `⎇ ${formatCount(forksValue)}`;
+      forkStat.title = `${forksLabel}: ${formatCount(forksValue)}`;
+      forkStat.setAttribute('aria-label', forkStat.title);
+
+      stats.append(starStat, forkStat);
+
+      card.append(title, desc, meta, stats);
 
       if (repo.topics?.length) {
         const chips = document.createElement('div');
