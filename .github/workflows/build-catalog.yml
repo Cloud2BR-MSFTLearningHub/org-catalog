@@ -37,6 +37,7 @@ jobs:
         run: node scripts/fetch-catalog.mjs
 
       - name: Commit changes (if any)
+        if: github.event_name != 'pull_request'
         run: |
           if [[ -z "$(git status --porcelain)" ]]; then
             echo "No changes to commit."
