@@ -5,6 +5,11 @@ on:
   # workflow_dispatch: {}
   # schedule:
   #   - cron: '17 3 * * *' # nightly
+  # push:
+  #   branches: [main]
+  #   paths:
+  #     - scripts/fetch-catalog.mjs
+  #     - docs/config.json
 
 permissions:
   contents: write
@@ -49,4 +54,4 @@ jobs:
 
           git add docs/catalog.json
           git commit -m "chore: update catalog"
-          git push
+          git push origin HEAD:main
