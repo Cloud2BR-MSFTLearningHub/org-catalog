@@ -60,11 +60,10 @@ jobs:
           script: |
             const owner = context.repo.owner;
             const repo = context.repo.repo;
-            const workflowId = context.workflow;
             const runs = await github.paginate(github.rest.actions.listWorkflowRuns, {
               owner,
               repo,
-              workflow_id: workflowId,
+              workflow_id: 'pages-prod.yml',
               per_page: 100,
             });
             const successfulRuns = runs
