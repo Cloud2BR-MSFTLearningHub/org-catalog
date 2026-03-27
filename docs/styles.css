@@ -26,11 +26,11 @@
   --surface2: #dde1e9;
   --card: #ffffff;
 
-  /* Header — Microsoft brand blue */
-  --header-bg: #0078d4;
+  /* Header — deep professional blue */
+  --header-bg: #004f8c;
   --header-fg: #ffffff;
-  --header-muted: #cce4f7;
-  --header-border: #006cbf;
+  --header-muted: #b3d0ed;
+  --header-border: #003d6e;
   --header-link: #ffffff;
 }
 
