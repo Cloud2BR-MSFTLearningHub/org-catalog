@@ -1,12 +1,15 @@
-name: Deploy GitHub Pages (prod)
+name: Deploy GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   workflow_dispatch: {}
 
 permissions:
-  contents: write   # <- needed to push commits
+  actions: write
+  contents: write
+  deployments: write
   pages: write
   id-token: write
 
@@ -15,13 +18,14 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          persist-credentials: true
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -38,34 +42,64 @@ jobs:
           TRANSLATE_TO: ${{ vars.TRANSLATE_TO || 'es,pt,fr' }}
         run: node scripts/fetch-catalog.mjs
 
-      - name: Commit generated catalog.json (optional)
-        if: github.event_name == 'workflow_dispatch'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/catalog.json
-          git diff --cached --quiet && exit 0
-          git commit -m "chore: update docs/catalog.json [skip ci]"
-          git push
-
-      - name: Configure Pages
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    permissions:
-      pages: write
-      id-token: write
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Clean up old workflow runs
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const workflowId = context.workflow;
+            const runs = await github.paginate(github.rest.actions.listWorkflowRuns, {
+              owner,
+              repo,
+              workflow_id: workflowId,
+              per_page: 100,
+            });
+            const successfulRuns = runs
+              .filter((run) => run.conclusion === 'success' && run.status === 'completed')
+              .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+            const runsToDelete = successfulRuns.slice(2);
+            core.info(`Found ${successfulRuns.length} successful runs. Keeping 2, deleting ${runsToDelete.length}.`);
+            for (const run of runsToDelete) {
+              core.info(`Deleting run ${run.id} created at ${run.created_at}.`);
+              await github.rest.actions.deleteWorkflowRun({ owner, repo, run_id: run.id });
+            }
+
+      - name: Keep only latest Pages deployment record
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const deployments = await github.paginate(github.rest.repos.listDeployments, {
+              owner,
+              repo,
+              environment: 'github-pages',
+              per_page: 100,
+            });
+            const sorted = deployments.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+            const latest = sorted[0];
+            const toDelete = sorted.slice(1);
+            core.info(`Found ${sorted.length} deployments. Keeping ${latest ? latest.id : 'none'}, deleting ${toDelete.length}.`);
+            for (const d of toDelete) {
+              core.info(`Marking deployment ${d.id} inactive.`);
+              await github.rest.repos.createDeploymentStatus({
+                owner, repo, deployment_id: d.id,
+                state: 'inactive', auto_inactive: false,
+                description: 'Removed old Pages deployment record',
+              });
+              core.info(`Deleting deployment ${d.id}.`);
+              await github.rest.repos.deleteDeployment({ owner, repo, deployment_id: d.id });
+            }
