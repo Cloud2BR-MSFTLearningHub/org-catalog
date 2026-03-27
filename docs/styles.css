@@ -26,11 +26,11 @@
   --surface2: #dde1e9;
   --card: #ffffff;
 
-  /* Header — deep professional blue */
-  --header-bg: #004f8c;
+  /* Header — deep navy blue */
+  --header-bg: #002050;
   --header-fg: #ffffff;
-  --header-muted: #b3d0ed;
-  --header-border: #003d6e;
+  --header-muted: #99b8d9;
+  --header-border: #001538;
   --header-link: #ffffff;
 }
 
