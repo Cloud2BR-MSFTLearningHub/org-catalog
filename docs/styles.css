@@ -19,6 +19,13 @@
   --radius-lg: 14px;
 
   --focus: color-mix(in oklab, var(--link) 55%, var(--bg));
+
+  /* Header — professional deep slate */
+  --header-bg: #1e2a3a;
+  --header-fg: #f0f4f8;
+  --header-muted: #8fa3b8;
+  --header-border: #2e3d50;
+  --header-link: #90c4f9;
 }
 
 html[data-theme="dark"] {
@@ -26,6 +33,13 @@ html[data-theme="dark"] {
   --bg: #0d1117;
   --fg: #e6edf3;
   --link: #58a6ff;
+
+  /* Header inherits dark palette */
+  --header-bg: #161b22;
+  --header-fg: #e6edf3;
+  --header-muted: #8b949e;
+  --header-border: #30363d;
+  --header-link: #58a6ff;
 }
 
 .themeToggleBtn {
@@ -61,8 +75,105 @@ body {
 }
 
 .header {
-  border-bottom: 1px solid var(--border);
-  background: var(--surface);
+  border-bottom: 1px solid var(--header-border);
+  background: var(--header-bg);
+  color: var(--header-fg);
+}
+
+.header .title {
+  color: var(--header-fg);
+}
+
+.header .subtitle {
+  color: var(--header-muted);
+}
+
+.header .brandOrg {
+  color: var(--header-fg);
+}
+
+.header .brandMeta {
+  color: var(--header-muted);
+}
+
+.header .brandMeta a {
+  color: var(--header-muted);
+}
+
+.header .brandMeta a:hover {
+  color: var(--header-fg);
+}
+
+.header .pipelineBadges {
+  color: var(--header-muted);
+}
+
+.header .searchLabel {
+  color: var(--header-muted);
+}
+
+.header .search {
+  background: color-mix(in oklab, var(--header-bg) 70%, #000);
+  color: var(--header-fg);
+  border-color: var(--header-border);
+}
+
+.header .search::placeholder {
+  color: var(--header-muted);
+}
+
+.header .select {
+  background: color-mix(in oklab, var(--header-bg) 70%, #000);
+  color: var(--header-fg);
+  border-color: var(--header-border);
+}
+
+.header .segmented {
+  background: color-mix(in oklab, var(--header-bg) 70%, #000);
+  border-color: var(--header-border);
+}
+
+.header .segButton {
+  color: var(--header-muted);
+  border-right-color: var(--header-border);
+}
+
+.header .segButton:hover:not(:disabled) {
+  color: var(--header-fg);
+  background: color-mix(in oklab, var(--header-fg) 10%, transparent);
+}
+
+.header .segButton.active {
+  color: var(--header-fg);
+  background: color-mix(in oklab, var(--header-fg) 18%, transparent);
+}
+
+.header .button.themeToggleBtn {
+  background: color-mix(in oklab, var(--header-fg) 12%, transparent);
+  border-color: var(--header-border);
+  color: var(--header-fg);
+}
+
+.header .button.themeToggleBtn:hover {
+  background: color-mix(in oklab, var(--header-fg) 20%, transparent);
+}
+
+.header .sideCard {
+  background: color-mix(in oklab, var(--header-bg) 60%, #000);
+  border-color: var(--header-border);
+}
+
+.header .sideLabel {
+  color: var(--header-muted);
+}
+
+.header .sideLinks a {
+  color: var(--header-fg);
+}
+
+.header .avatar {
+  border-color: var(--header-border);
+  background: color-mix(in oklab, var(--header-bg) 80%, #000);
 }
 
 .title {
