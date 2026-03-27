@@ -10,6 +10,14 @@
     />
     <title>Microsoft Cloud Sandbox - Unofficial</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem('orgCatalogTheme') === 'dark')
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <header class="header">
@@ -88,6 +96,8 @@
                   <button id="viewPublic" class="segButton active" type="button" data-i18n="button.public">Public</button>
                   <button id="viewPrivate" class="segButton" type="button" data-i18n="button.private">Private</button>
                 </div>
+
+                <button id="themeToggle" class="button themeToggleBtn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
               </div>
             </div>
           </div>

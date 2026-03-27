@@ -5,8 +5,15 @@ const footerMetaEl = document.getElementById('footerMeta');
 
 const viewPublicEl = document.getElementById('viewPublic');
 const viewPrivateEl = document.getElementById('viewPrivate');
+const themeToggleEl = document.getElementById('themeToggle');
 
 const uiLangEl = document.getElementById('lang');
+
+// Initialize toggle icon based on current theme (set by anti-flash script)
+if (themeToggleEl) {
+  themeToggleEl.textContent =
+    document.documentElement.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+}
 
 const languageFilterEl = document.getElementById('languageFilter');
 const categoryFilterEl = document.getElementById('categoryFilter');
@@ -944,6 +951,19 @@ function getOrgPrivateReposUrl() {
 }
 
 // Events
+themeToggleEl?.addEventListener('click', () => {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  if (isDark) {
+    document.documentElement.removeAttribute('data-theme');
+    try { localStorage.setItem('orgCatalogTheme', 'light'); } catch (e) {}
+    themeToggleEl.textContent = '🌙';
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    try { localStorage.setItem('orgCatalogTheme', 'dark'); } catch (e) {}
+    themeToggleEl.textContent = '☀️';
+  }
+});
+
 qEl.addEventListener('input', update);
 
 languageFilterEl?.addEventListener('change', update);

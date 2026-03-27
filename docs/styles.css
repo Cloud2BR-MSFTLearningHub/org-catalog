@@ -1,10 +1,10 @@
 :root {
-  color-scheme: light dark;
-  --bg: Canvas;
-  --fg: CanvasText;
-  --link: LinkText;
+  color-scheme: light;
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --link: #0969da;
 
-  /* Professional neutrals (derived from system colors) */
+  /* Professional neutrals (derived from base colors) */
   --muted: color-mix(in oklab, var(--fg) 62%, var(--bg));
   --border: color-mix(in oklab, var(--fg) 14%, var(--bg));
   --surface: color-mix(in oklab, var(--bg) 92%, var(--fg));
@@ -19,6 +19,20 @@
   --radius-lg: 14px;
 
   --focus: color-mix(in oklab, var(--link) 55%, var(--bg));
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0d1117;
+  --fg: #e6edf3;
+  --link: #58a6ff;
+}
+
+.themeToggleBtn {
+  padding: 8px 10px;
+  font-size: 16px;
+  line-height: 1;
+  flex-shrink: 0;
 }
 
 * { box-sizing: border-box; }
