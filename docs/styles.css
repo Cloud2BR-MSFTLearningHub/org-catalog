@@ -851,6 +851,10 @@ body {
   overflow: hidden;
 }
 
+html[data-theme="dark"] .cardTitle {
+  color: #000000;
+}
+
 .cardDesc {
   margin: 8px 0 0;
   color: var(--muted);
