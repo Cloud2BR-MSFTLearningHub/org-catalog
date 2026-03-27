@@ -1,17 +1,17 @@
 :root {
   color-scheme: light;
-  --bg: #ffffff;
+  --bg: #f0f2f6;
   --fg: #1a1a1a;
-  --link: #0969da;
+  --link: #0078d4;
 
-  /* Professional neutrals (derived from base colors) */
+  /* Professional neutrals */
   --muted: color-mix(in oklab, var(--fg) 62%, var(--bg));
   --border: color-mix(in oklab, var(--fg) 14%, var(--bg));
-  --surface: color-mix(in oklab, var(--bg) 92%, var(--fg));
-  --surface2: color-mix(in oklab, var(--bg) 86%, var(--fg));
+  --surface: #e6e9ef;
+  --surface2: #dde1e9;
 
   /* Component surfaces */
-  --card: var(--surface2);
+  --card: #ffffff;
 
   /* Shape */
   --radius-sm: 10px;
@@ -20,12 +20,18 @@
 
   --focus: color-mix(in oklab, var(--link) 55%, var(--bg));
 
-  /* Header — professional deep slate */
-  --header-bg: #1e2a3a;
-  --header-fg: #f0f4f8;
-  --header-muted: #8fa3b8;
-  --header-border: #2e3d50;
-  --header-link: #90c4f9;
+  /* Page body — light gray like the swatch */
+  --bg: #f0f2f6;
+  --surface: #e6e9ef;
+  --surface2: #dde1e9;
+  --card: #ffffff;
+
+  /* Header — Microsoft brand blue */
+  --header-bg: #0078d4;
+  --header-fg: #ffffff;
+  --header-muted: #cce4f7;
+  --header-border: #006cbf;
+  --header-link: #ffffff;
 }
 
 html[data-theme="dark"] {
