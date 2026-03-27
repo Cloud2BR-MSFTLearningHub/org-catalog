@@ -9,8 +9,6 @@
   --border: color-mix(in oklab, var(--fg) 14%, var(--bg));
   --surface: #e6e9ef;
   --surface2: #dde1e9;
-
-  /* Component surfaces */
   --card: #ffffff;
 
   /* Shape */
@@ -19,12 +17,6 @@
   --radius-lg: 14px;
 
   --focus: color-mix(in oklab, var(--link) 55%, var(--bg));
-
-  /* Page body — light gray like the swatch */
-  --bg: #f0f2f6;
-  --surface: #e6e9ef;
-  --surface2: #dde1e9;
-  --card: #ffffff;
 
   /* Header — deep navy blue */
   --header-bg: #002050;
@@ -195,7 +187,7 @@ body {
 
 .headerGrid {
   display: grid;
-  grid-template-columns: 140px 1fr 300px;
+  grid-template-columns: 140px 1fr 280px;
   gap: 16px;
   align-items: start;
 }
@@ -212,6 +204,7 @@ body {
   text-align: center;
   max-width: 140px;
   overflow-wrap: anywhere;
+  font-size: 13px;
 }
 
 .headerMain {
@@ -314,32 +307,177 @@ body {
   min-width: 90px;
 }
 
-@media (max-width: 900px) {
-  .sideFilters {
-    flex-wrap: wrap;
-  }
-}
-
+/* ── Tablet: 641px–900px ─────────────────────────────────── */
 @media (max-width: 900px) {
   .headerGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: auto auto;
   }
 
-  .filtersSection {
-    margin-top: 10px;
+  .headerSide {
+    grid-column: 1 / -1;
+    padding-top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .headerRail {
     padding-top: 0;
   }
 
+  .header .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .filtersSection {
+    margin-top: 10px;
+  }
+
+  .sideFilters {
+    flex-wrap: wrap;
+  }
+
+  .avatar.orgAvatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .orgRailLink {
+    max-width: 100px;
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .controlsLeft {
+    flex-basis: 100%;
+  }
+
+  .controlsRight {
+    margin-left: 0;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .search {
+    min-width: 0;
+  }
+
+  .select, .select.selectSmall, .controls .select.selectSmall {
+    min-width: 0;
+  }
+}
+
+/* ── Mobile: up to 640px ──────────────────────────────────── */
+@media (max-width: 640px) {
+  .headerGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .headerRail {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    padding-top: 0;
+  }
+
+  .avatar.orgAvatar {
+    width: 52px;
+    height: 52px;
+  }
+
+  .orgRailLink {
+    max-width: none;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .controlsLeft {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .controlsRight {
+    margin-left: 0;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .search {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .select, .select.selectSmall, .controls .select.selectSmall {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .segmented {
+    flex: 1 1 auto;
+  }
+
+  .segButton {
+    flex: 1;
+    text-align: center;
+  }
+
+  .themeToggleBtn {
+    flex-shrink: 0;
+  }
+
+  .filterGroup {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .filterGroup .select {
+    width: 100%;
+  }
+
+  .filtersRow .filterGroup {
+    flex: 1 1 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
   .headerSide {
     padding-top: 0;
   }
 
+  .sideCard {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 12px;
+  }
+
   .header .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 
@@ -433,7 +571,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  flex: 1 1 520px;
+  flex: 1 1 300px;
   min-width: 0;
 }
 
@@ -571,7 +709,7 @@ body {
 
 .search {
   flex: 1;
-  min-width: 260px;
+  min-width: 0;
   padding: 10px 12px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
