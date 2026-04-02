@@ -65,7 +65,7 @@ const BUILTIN_UI_TRANSLATIONS = {
     'Opened GitHub private repositories in a new tab.':
       'Se abrieron los repositorios privados de GitHub en una nueva pestaña.',
 
-    'Cloud2BR Open Source - Microsoft Cloud Sandbox - Learning Hub': 'Cloud2BR Open Source - Microsoft Cloud Sandbox - Learning Hub',
+    'Cloud2BR Open Source Microsoft Cloud Sandbox - Learning Hub': 'Cloud2BR Open Source Microsoft Cloud Sandbox - Learning Hub',
 
     'Experimentation and playful learning, inviting users to try out Microsoft technology without fear of breaking things.':
       'Experimentación y aprendizaje lúdico, invitando a los usuarios a probar tecnología de Microsoft sin miedo a romper nada.',
@@ -105,7 +105,7 @@ const BUILTIN_UI_TRANSLATIONS = {
     'Opened GitHub private repositories in a new tab.':
       'Os repositórios privados do GitHub foram abertos em uma nova aba.',
 
-    'Cloud2BR Open Source - Microsoft Cloud Sandbox - Learning Hub': 'Cloud2BR Open Source - Microsoft Cloud Sandbox - Learning Hub',
+    'Cloud2BR Open Source Microsoft Cloud Sandbox - Learning Hub': 'Cloud2BR Open Source Microsoft Cloud Sandbox - Learning Hub',
 
     'Experimentation and playful learning, inviting users to try out Microsoft technology without fear of breaking things.':
       'Experimentação e aprendizagem lúdica, convidando os usuários a experimentar tecnologia da Microsoft sem medo de quebrar nada.',
@@ -145,7 +145,7 @@ const BUILTIN_UI_TRANSLATIONS = {
     'Opened GitHub private repositories in a new tab.':
       "Ouverture des dépôts privés GitHub dans un nouvel onglet.",
 
-    'Cloud2BR Open Source - Microsoft Cloud Sandbox - Learning Hub': 'Cloud2BR Open Source - Microsoft Cloud Sandbox - Learning Hub',
+    'Cloud2BR Open Source Microsoft Cloud Sandbox - Learning Hub': 'Cloud2BR Open Source Microsoft Cloud Sandbox - Learning Hub',
 
     'Experimentation and playful learning, inviting users to try out Microsoft technology without fear of breaking things.':
       "Expérimentation et apprentissage ludique, invitant les utilisateurs à essayer la technologie Microsoft sans crainte de tout casser.",
