@@ -1,7 +1,5 @@
 # Org Catalog (GitHub Pages)
 
-**Organization:** [Cloud2BR Open Source Microsoft Cloud Sandbox - Learning Hub](https://github.com/Cloud2BR-MSFTLearningHub)
-
 Costa Rica
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
@@ -11,8 +9,7 @@ Last updated: 2026-02-19
 
 ----------
 
-> A lightweight repo catalog designed to be hosted with **GitHub Pages**:
->
+> A lightweight org repo catalog ([Cloud2BR Open Source Microsoft Cloud Sandbox - Learning Hub](https://github.com/Cloud2BR-MSFTLearningHub)) designed to be hosted with **GitHub Pages**:
 > - Public catalog is generated at build time (GitHub Action) into `docs/catalog.json`.
 > - Site is static HTML/CSS/JS served from the `docs/` folder.
 > - By default, the **Private** button opens the org's private repo list on GitHub (no OAuth required).
