@@ -1,6 +1,6 @@
 # Org Catalog (GitHub Pages)
 
-`Cloud2BR-MSFTLearningHub auth worker (Cloudflare)`
+`org-catalog auth worker (Cloudflare)`
 
 Costa Rica
 
@@ -17,7 +17,7 @@ Last updated: 2026-02-19
 
 1) Create a GitHub OAuth App
       - GitHub → Settings → Developer settings → OAuth Apps → New OAuth App
-      - Homepage URL: your catalog URL (e.g. `https://<org>.github.io/Cloud2BR-MSFTLearningHub/`)
+      - Homepage URL: your catalog URL (e.g. `https://<org>.github.io/org-catalog/`)
       - Authorization callback URL: `https://<your-worker>.workers.dev/callback`
 2) Deploy the worker
     - Install Wrangler: `npm i -g wrangler`

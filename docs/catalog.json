@@ -3,9 +3,9 @@
   "org": "Cloud2BR-MSFTLearningHub",
   "repos": [
     {
-      "name": "Cloud2BR-MSFTLearningHub",
-      "fullName": "Cloud2BR-MSFTLearningHub/Cloud2BR-MSFTLearningHub",
-      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Cloud2BR-MSFTLearningHub",
+      "name": "org-catalog",
+      "fullName": "Cloud2BR-MSFTLearningHub/org-catalog",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/org-catalog",
       "description": "Quick demo of a lightweight repo catalog designed to be hosted with GitHub Pages.",
       "topics": [],
       "categories": [

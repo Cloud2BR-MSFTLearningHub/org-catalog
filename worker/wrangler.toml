@@ -1,4 +1,4 @@
-name = "Cloud2BR-MSFTLearningHub-auth"
+name = "org-catalog-auth"
 main = "src/worker.mjs"
 compatibility_date = "2025-12-01"
 

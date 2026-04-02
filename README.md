@@ -64,7 +64,7 @@ The **Translate** dropdown can translate the app UI client-side. If you also wan
 ### Configure auth
 
 1) Deploy the worker in `worker/` (see `worker/README.md`)
-2) Set `docs/config.json` → `authBaseUrl` to your worker URL (example: `https://Cloud2BR-MSFTLearningHub-auth.<account>.workers.dev`)
+2) Set `docs/config.json` → `authBaseUrl` to your worker URL (example: `https://org-catalog-auth.<account>.workers.dev`)
 
 > [!NOTE]
 >

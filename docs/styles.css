@@ -532,6 +532,12 @@ body {
   text-decoration: none;
 }
 
+.brandOrg .orgSubline {
+  font-weight: 400;
+  font-size: 0.8em;
+  color: var(--muted);
+}
+
 .brandOrg:hover {
   text-decoration: underline;
 }
