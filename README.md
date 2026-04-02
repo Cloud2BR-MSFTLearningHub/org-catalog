@@ -17,7 +17,7 @@ Last updated: 2026-02-19
 > - Optional: if you want private repos rendered *inside* this catalog UI, you need an OAuth callback handled by a tiny serverless endpoint (see below).
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/584aab63-e965-40a1-80f2-a77e25972b05" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 1000px;"/>
+  <img src="https://github.com/user-attachments/assets/287faf88-7d60-44f8-926f-73fae80214e6" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px; width: 1000px;"/>
 </div>
 
 ## Quick start
