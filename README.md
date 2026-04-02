@@ -26,10 +26,10 @@ Last updated: 2026-02-19
       - **Settings → Pages → Build and deployment**
       - Source: **Deploy from a branch**
       - Branch: `main` (or `master`) / folder: `docs`
-2) Set your org name, this catalog is intended to index only: `https://github.com/MicrosoftCloudEssentials-LearningHub`. By default the generator targets `MicrosoftCloudEssentials-LearningHub`. Optional (only if you want to override locally or in a fork): add a repository variable named `ORG_NAME`:
+2) Set your org name, this catalog is intended to index only: `https://github.com/Cloud2BR-MSFTLearningHub`. By default the generator targets `Cloud2BR-MSFTLearningHub`. Optional (only if you want to override locally or in a fork): add a repository variable named `ORG_NAME`:
       - **Settings → Secrets and variables → Actions → Variables → New repository variable**
       - Name: `ORG_NAME`
-      - Value: a GitHub org (e.g. `MicrosoftCloudEssentials-LearningHub`)
+      - Value: a GitHub org (e.g. `Cloud2BR-MSFTLearningHub`)
 3) Enable workflow write access. The workflow commits `docs/catalog.json` back to the repo. 
       - **Settings → Actions → General → Workflow permissions**
       - Select **Read and write permissions**
@@ -58,13 +58,13 @@ The **Translate** dropdown can translate the app UI client-side. If you also wan
 
 - Redirects the user to GitHub to sign in
 - Exchanges the OAuth code for an access token
-- Verifies the user is a member of `MicrosoftCloudEssentials-LearningHub`
+- Verifies the user is a member of `Cloud2BR-MSFTLearningHub`
 - Redirects back to the catalog
 
 ### Configure auth
 
 1) Deploy the worker in `worker/` (see `worker/README.md`)
-2) Set `docs/config.json` → `authBaseUrl` to your worker URL (example: `https://org-catalog-auth.<account>.workers.dev`)
+2) Set `docs/config.json` → `authBaseUrl` to your worker URL (example: `https://Cloud2BR-MSFTLearningHub-auth.<account>.workers.dev`)
 
 > [!NOTE]
 >

@@ -7,7 +7,7 @@ if (argv.includes('--help') || argv.includes('-h')) {
   process.exit(0);
 }
 
-const DEFAULT_ORG = 'MicrosoftCloudEssentials-LearningHub';
+const DEFAULT_ORG = 'Cloud2BR-MSFTLearningHub';
 const ORG_NAME = (process.env.ORG_NAME || DEFAULT_ORG).trim();
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 

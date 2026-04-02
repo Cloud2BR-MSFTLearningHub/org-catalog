@@ -1,4 +1,4 @@
-name = "org-catalog-auth"
+name = "Cloud2BR-MSFTLearningHub-auth"
 main = "src/worker.mjs"
 compatibility_date = "2025-12-01"
 
@@ -8,8 +8,8 @@ compatibility_date = "2025-12-01"
 # - STATE_SECRET
 #
 # Optional via `wrangler secret put` or `wrangler.toml` vars:
-# - ORG_NAME (defaults to MicrosoftCloudEssentials-LearningHub)
-# - ALLOWED_RETURN_ORIGINS (comma-separated, e.g. https://microsoftcloudessentials-learninghub.github.io,http://localhost:4173)
+# - ORG_NAME (defaults to Cloud2BR-MSFTLearningHub)
+# - ALLOWED_RETURN_ORIGINS (comma-separated, e.g. https://cloud2br-msftlearninghub.github.io,http://localhost:4173)
 #
 # Optional (translation):
 # - TRANSLATOR_KEY
@@ -17,5 +17,5 @@ compatibility_date = "2025-12-01"
 # - TRANSLATOR_ENDPOINT
 
 [vars]
-ORG_NAME = "MicrosoftCloudEssentials-LearningHub"
-ALLOWED_RETURN_ORIGINS = "http://localhost:4173,https://microsoftcloudessentials-learninghub.github.io"
+ORG_NAME = "Cloud2BR-MSFTLearningHub"
+ALLOWED_RETURN_ORIGINS = "http://localhost:4173,https://cloud2br-msftlearninghub.github.io"

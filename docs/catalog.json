@@ -1,11 +1,11 @@
 {
   "generatedAt": "2026-02-19T02:34:10.924Z",
-  "org": "MicrosoftCloudEssentials-LearningHub",
+  "org": "Cloud2BR-MSFTLearningHub",
   "repos": [
     {
-      "name": "org-catalog",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/org-catalog",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/org-catalog",
+      "name": "Cloud2BR-MSFTLearningHub",
+      "fullName": "Cloud2BR-MSFTLearningHub/Cloud2BR-MSFTLearningHub",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Cloud2BR-MSFTLearningHub",
       "description": "Quick demo of a lightweight repo catalog designed to be hosted with GitHub Pages.",
       "topics": [],
       "categories": [
@@ -39,8 +39,8 @@
     },
     {
       "name": "GenAIOpsMaturityLevels",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/GenAIOpsMaturityLevels",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/GenAIOpsMaturityLevels",
+      "fullName": "Cloud2BR-MSFTLearningHub/GenAIOpsMaturityLevels",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/GenAIOpsMaturityLevels",
       "description": "This demonstrates how to manage LLMs using Microsoft Azure GenAIOps. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly.",
       "topics": [
         "ai",
@@ -85,8 +85,8 @@
     },
     {
       "name": "AzureTerraformTemplates-v0.0.0",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/AzureTerraformTemplates-v0.0.0",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/AzureTerraformTemplates-v0.0.0",
+      "fullName": "Cloud2BR-MSFTLearningHub/AzureTerraformTemplates-v0.0.0",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/AzureTerraformTemplates-v0.0.0",
       "description": "Sample Terraform templates for deploying and managing Azure resources. These templates are meant to serve as examples and should be adjusted as needed to fit specific use cases or requirements.",
       "topics": [
         "azure-terraform",
@@ -125,8 +125,8 @@
     },
     {
       "name": "DP-100StudyGuide",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/DP-100StudyGuide",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/DP-100StudyGuide",
+      "fullName": "Cloud2BR-MSFTLearningHub/DP-100StudyGuide",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/DP-100StudyGuide",
       "description": "Study Guide for DS-100 Microsoft certification. Check the official Microsoft documentation for official materials.",
       "topics": [
         "azure",
@@ -167,8 +167,8 @@
     },
     {
       "name": "AI-102StudyGuide",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/AI-102StudyGuide",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/AI-102StudyGuide",
+      "fullName": "Cloud2BR-MSFTLearningHub/AI-102StudyGuide",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/AI-102StudyGuide",
       "description": "Study Guide for AI-102 Microsoft certification. Check the official Microsoft documentation for official materials.",
       "topics": [
         "ai-102-questions",
@@ -212,8 +212,8 @@
     },
     {
       "name": "GitHub-Overview",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/GitHub-Overview",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/GitHub-Overview",
+      "fullName": "Cloud2BR-MSFTLearningHub/GitHub-Overview",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/GitHub-Overview",
       "description": "GitHub Overview. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly.",
       "topics": [
         "demos",
@@ -252,8 +252,8 @@
     },
     {
       "name": "Fabric-EnterpriseFramework",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-EnterpriseFramework",
+      "fullName": "Cloud2BR-MSFTLearningHub/Fabric-EnterpriseFramework",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Fabric-EnterpriseFramework",
       "description": "This repository contains demos and guides for building a well-architected framework for a Microsoft Fabric enterprise-level data platform. These demos are intended as a guide.  For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly.",
       "topics": [
         "best-practices",
@@ -295,8 +295,8 @@
     },
     {
       "name": "Agentic-DevOps-AI-Shopping",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/Agentic-DevOps-AI-Shopping",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/Agentic-DevOps-AI-Shopping",
+      "fullName": "Cloud2BR-MSFTLearningHub/Agentic-DevOps-AI-Shopping",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Agentic-DevOps-AI-Shopping",
       "description": "Demos and guides for building a Multimodal AI shopping assistant. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly.",
       "topics": [
         "a2a",
@@ -341,8 +341,8 @@
     },
     {
       "name": "DemosScenarios-TechTalks",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/DemosScenarios-TechTalks",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/DemosScenarios-TechTalks",
+      "fullName": "Cloud2BR-MSFTLearningHub/DemosScenarios-TechTalks",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/DemosScenarios-TechTalks",
       "description": "This repository showcases demonstrations and scenarios using Microsoft Cloud technologies. Please note that these demos are intended as a guide and are based on my personal experiences. ",
       "topics": [
         "ai",
@@ -392,8 +392,8 @@
     },
     {
       "name": "RAG-ChatBot-Implementation",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/RAG-ChatBot-Implementation",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/RAG-ChatBot-Implementation",
+      "fullName": "Cloud2BR-MSFTLearningHub/RAG-ChatBot-Implementation",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/RAG-ChatBot-Implementation",
       "description": "This repository contains example of a RAG chat bot with a basic architecture (designed for scenarios without network isolation), and a standard Zero-Trust Architecture deployment. It is intended for quick demos and should be adjusted as needed to fit specific use cases or requirements.",
       "topics": [
         "ai",
@@ -443,8 +443,8 @@
     },
     {
       "name": "Agentic-AI-Media-Assistant",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/Agentic-AI-Media-Assistant",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/Agentic-AI-Media-Assistant",
+      "fullName": "Cloud2BR-MSFTLearningHub/Agentic-AI-Media-Assistant",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Agentic-AI-Media-Assistant",
       "description": "Demos and guides for building a Multimodal AI Media assistant. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly.",
       "topics": [
         "a2a",
@@ -487,8 +487,8 @@
     },
     {
       "name": "azDataBase-Freeing-Unused-Space",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/azDataBase-Freeing-Unused-Space",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/azDataBase-Freeing-Unused-Space",
+      "fullName": "Cloud2BR-MSFTLearningHub/azDataBase-Freeing-Unused-Space",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/azDataBase-Freeing-Unused-Space",
       "description": "This repository contains demos and guides for Optimizing Azure Database Performance by Freeing Up Unused Space.  These demos are intended as a guide. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft support directly.",
       "topics": [
         "azure-databases",
@@ -528,8 +528,8 @@
     },
     {
       "name": "Azure-MCP-blueprint",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/Azure-MCP-blueprint",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/Azure-MCP-blueprint",
+      "fullName": "Cloud2BR-MSFTLearningHub/Azure-MCP-blueprint",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Azure-MCP-blueprint",
       "description": "Blueprint sample to setup MCP server in Azure, with multiple hosting options. These demos are intended as a guide. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly.",
       "topics": [
         "ai",
@@ -570,8 +570,8 @@
     },
     {
       "name": ".github",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/.github",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/.github",
+      "fullName": "Cloud2BR-MSFTLearningHub/.github",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/.github",
       "description": "",
       "topics": [],
       "categories": [],
@@ -585,8 +585,8 @@
     },
     {
       "name": "AzureFunctionApp-TempUsage",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/AzureFunctionApp-TempUsage",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/AzureFunctionApp-TempUsage",
+      "fullName": "Cloud2BR-MSFTLearningHub/AzureFunctionApp-TempUsage",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/AzureFunctionApp-TempUsage",
       "description": " Overview about how Azure Function Apps operate within App Service infrastructure, focusing on temp file creation, storage, and management. Runtime behavior, deployment impact, and optimization strategies. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly.",
       "topics": [
         "azure-infrastructure",
@@ -627,8 +627,8 @@
     },
     {
       "name": "Fabric-AI-Retail-Demo",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/Fabric-AI-Retail-Demo",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-AI-Retail-Demo",
+      "fullName": "Cloud2BR-MSFTLearningHub/Fabric-AI-Retail-Demo",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Fabric-AI-Retail-Demo",
       "description": "Designed to highlight the power of Microsoft Fabric in the retail sector. How Fabric can serve not only as a unified data platform but also as a strategic foundation for preparing data for future AI-driven use cases",
       "topics": [
         "ai",
@@ -672,8 +672,8 @@
     },
     {
       "name": "AI-900StudyGuide",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/AI-900StudyGuide",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/AI-900StudyGuide",
+      "fullName": "Cloud2BR-MSFTLearningHub/AI-900StudyGuide",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/AI-900StudyGuide",
       "description": "Study Guide for AI-900 Microsoft certification. Check the official Microsoft documentation for official materials.",
       "topics": [
         "ai-900-questions",
@@ -719,8 +719,8 @@
     },
     {
       "name": "Demystifying-Cloud-Evolution",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/Demystifying-Cloud-Evolution",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/Demystifying-Cloud-Evolution",
+      "fullName": "Cloud2BR-MSFTLearningHub/Demystifying-Cloud-Evolution",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Demystifying-Cloud-Evolution",
       "description": "Demystifying Cloud Evolution provides an overview of cloud technologies, blending historical context with technical insights into Azure’s architecture. It covers capacity management, energy efficiency, and orchestration tools like Kubernetes, with demos and learnings for community reference",
       "topics": [
         "azure",
@@ -759,8 +759,8 @@
     },
     {
       "name": "PDFs-Invoice-Processing-Fapp-OpenFramework",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/PDFs-Invoice-Processing-Fapp-OpenFramework",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/PDFs-Invoice-Processing-Fapp-OpenFramework",
+      "fullName": "Cloud2BR-MSFTLearningHub/PDFs-Invoice-Processing-Fapp-OpenFramework",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/PDFs-Invoice-Processing-Fapp-OpenFramework",
       "description": "Example of how to create to extract PDFs from an Azure Storage Account, process them using Azure resources and Open Framework, and store the results in Cosmos DB for further analysis.",
       "topics": [
         "ai-use-cases",
@@ -807,8 +807,8 @@
     },
     {
       "name": "PDFs-MultiLayout-VisualCue-AzureAI-Document-Processing",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/PDFs-MultiLayout-VisualCue-AzureAI-Document-Processing",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/PDFs-MultiLayout-VisualCue-AzureAI-Document-Processing",
+      "fullName": "Cloud2BR-MSFTLearningHub/PDFs-MultiLayout-VisualCue-AzureAI-Document-Processing",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/PDFs-MultiLayout-VisualCue-AzureAI-Document-Processing",
       "description": "Extended solution for extracting tables, checkboxes, and visually selected values (e.g., shaded cells, Xs, checkmarks) from PDFs using Azure Document Intelligence and Vision.",
       "topics": [
         "ai",
@@ -849,8 +849,8 @@
     },
     {
       "name": "PDFs-Layouts-Processing-Fapp-DocIntelligence",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/PDFs-Layouts-Processing-Fapp-DocIntelligence",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/PDFs-Layouts-Processing-Fapp-DocIntelligence",
+      "fullName": "Cloud2BR-MSFTLearningHub/PDFs-Layouts-Processing-Fapp-DocIntelligence",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/PDFs-Layouts-Processing-Fapp-DocIntelligence",
       "description": "Example of how to create to extract tables, check boxes, and text form forms and documents from an Azure Storage Account, process them using Azure Document Intelligence, and store the results in Cosmos DB for further analysis. ",
       "topics": [
         "ai-use-cases-strategy",
@@ -897,8 +897,8 @@
     },
     {
       "name": "PDFs-Invoice-Processing-Fapp-DocIntelligence",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/PDFs-Invoice-Processing-Fapp-DocIntelligence",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/PDFs-Invoice-Processing-Fapp-DocIntelligence",
+      "fullName": "Cloud2BR-MSFTLearningHub/PDFs-Invoice-Processing-Fapp-DocIntelligence",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/PDFs-Invoice-Processing-Fapp-DocIntelligence",
       "description": "Example of how to create to extract PDFs from an Azure Storage Account, process them using Azure Document Intelligence, and store the results in Cosmos DB for further analysis. ",
       "topics": [
         "ai",
@@ -946,8 +946,8 @@
     },
     {
       "name": "Fabric-MCP-Agent2Agent",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/Fabric-MCP-Agent2Agent",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-MCP-Agent2Agent",
+      "fullName": "Cloud2BR-MSFTLearningHub/Fabric-MCP-Agent2Agent",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Fabric-MCP-Agent2Agent",
       "description": "Step by step reference implementation for setting up data agents and integrating agent with Copilot Studio",
       "topics": [
         "a2a",
@@ -994,8 +994,8 @@
     },
     {
       "name": "AI-Agent-Infra-Blueprint",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/AI-Agent-Infra-Blueprint",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/AI-Agent-Infra-Blueprint",
+      "fullName": "Cloud2BR-MSFTLearningHub/AI-Agent-Infra-Blueprint",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/AI-Agent-Infra-Blueprint",
       "description": "This demonstration showcases the complete setup of the infrastructure required to build a generative AI agent using Azure AI Foundry and Azure OpenAI Service. This example is configured within a public network; however, please ensure you adapt the implementation to align with your specific use case and best practices of security, etc.",
       "topics": [
         "ai",
@@ -1035,8 +1035,8 @@
     },
     {
       "name": "SAP-integration-AzLogicApps",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/SAP-integration-AzLogicApps",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/SAP-integration-AzLogicApps",
+      "fullName": "Cloud2BR-MSFTLearningHub/SAP-integration-AzLogicApps",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/SAP-integration-AzLogicApps",
       "description": "Comparison of approaches for handling cookie and CSRF token management.  For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly.",
       "topics": [
         "azure-logic-apps",
@@ -1074,8 +1074,8 @@
     },
     {
       "name": "Azure-App-Dev-Overview",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/Azure-App-Dev-Overview",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/Azure-App-Dev-Overview",
+      "fullName": "Cloud2BR-MSFTLearningHub/Azure-App-Dev-Overview",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Azure-App-Dev-Overview",
       "description": "Azure App Dev Services. GitHub Overview. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly.",
       "topics": [],
       "categories": [
@@ -1109,8 +1109,8 @@
     },
     {
       "name": "MS-Fabric-Essentials-Workshop",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/MS-Fabric-Essentials-Workshop",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/MS-Fabric-Essentials-Workshop",
+      "fullName": "Cloud2BR-MSFTLearningHub/MS-Fabric-Essentials-Workshop",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/MS-Fabric-Essentials-Workshop",
       "description": "Fabric Basic Workshop, these guides will elaborate on the standard architecture or features commonly used across industries.",
       "topics": [
         "ai-llms",
@@ -1157,8 +1157,8 @@
     },
     {
       "name": "Fabric-SKU-EstimationTool",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/Fabric-SKU-EstimationTool",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-SKU-EstimationTool",
+      "fullName": "Cloud2BR-MSFTLearningHub/Fabric-SKU-EstimationTool",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Fabric-SKU-EstimationTool",
       "description": "This tool is intended for estimation purposes only. A more comprehensive Microsoft tool is now public preview General Availability (GA). Please stay tuned for updates. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly.",
       "topics": [
         "helper",
@@ -1196,8 +1196,8 @@
     },
     {
       "name": "Fabric-Date-Hierarchy-Accelerator",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/Fabric-Date-Hierarchy-Accelerator",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/Fabric-Date-Hierarchy-Accelerator",
+      "fullName": "Cloud2BR-MSFTLearningHub/Fabric-Date-Hierarchy-Accelerator",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Fabric-Date-Hierarchy-Accelerator",
       "description": "Automate and standardize reusable date hierarchies in Power BI and Microsoft Fabric models using templates, scripts, and best practices.",
       "topics": [
         "date-hierarchies",
@@ -1237,8 +1237,8 @@
     },
     {
       "name": "Azure-DigitalTwins-Overview",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/Azure-DigitalTwins-Overview",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/Azure-DigitalTwins-Overview",
+      "fullName": "Cloud2BR-MSFTLearningHub/Azure-DigitalTwins-Overview",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Azure-DigitalTwins-Overview",
       "description": "Overview about how Azure Digital Twins. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly.",
       "topics": [
         "azure-digital-twins",
@@ -1280,8 +1280,8 @@
     },
     {
       "name": "Azure-Text-Embedding-Overview",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/Azure-Text-Embedding-Overview",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/Azure-Text-Embedding-Overview",
+      "fullName": "Cloud2BR-MSFTLearningHub/Azure-Text-Embedding-Overview",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Azure-Text-Embedding-Overview",
       "description": "Optimize text embedding performance using Azure-native tools and models. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly.",
       "topics": [
         "ai-foundry",
@@ -1323,8 +1323,8 @@
     },
     {
       "name": "DP-900StudyGuide",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/DP-900StudyGuide",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/DP-900StudyGuide",
+      "fullName": "Cloud2BR-MSFTLearningHub/DP-900StudyGuide",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/DP-900StudyGuide",
       "description": "Study Guide for DP-900 Microsoft certification. Check the official Microsoft documentation for official materials.",
       "topics": [
         "azure",
@@ -1370,8 +1370,8 @@
     },
     {
       "name": "Azure-Databases-Purview-Advisor",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/Azure-Databases-Purview-Advisor",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/Azure-Databases-Purview-Advisor",
+      "fullName": "Cloud2BR-MSFTLearningHub/Azure-Databases-Purview-Advisor",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/Azure-Databases-Purview-Advisor",
       "description": "Practical examples and guidance for working with Azure database services (setup, performance tuning, data modeling, and best practices, etc)",
       "topics": [
         "azure-database",
@@ -1413,8 +1413,8 @@
     },
     {
       "name": "AzureMachineLearning-Overview",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/AzureMachineLearning-Overview",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/AzureMachineLearning-Overview",
+      "fullName": "Cloud2BR-MSFTLearningHub/AzureMachineLearning-Overview",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/AzureMachineLearning-Overview",
       "description": "This repository provides an overview of Azure Machine Learning components for demonstration purposes only.",
       "topics": [
         "ai-foundry",
@@ -1456,8 +1456,8 @@
     },
     {
       "name": "azSynapse-Dynamic-RemoveBlanks",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/azSynapse-Dynamic-RemoveBlanks",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/azSynapse-Dynamic-RemoveBlanks",
+      "fullName": "Cloud2BR-MSFTLearningHub/azSynapse-Dynamic-RemoveBlanks",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/azSynapse-Dynamic-RemoveBlanks",
       "description": "Quick overview of what is Azure Synapse and demo of how to Dynamically Remove Blank Spaces to create a view",
       "topics": [
         "automation",
@@ -1496,8 +1496,8 @@
     },
     {
       "name": "MySQL-autoscale-IOPS",
-      "fullName": "MicrosoftCloudEssentials-LearningHub/MySQL-autoscale-IOPS",
-      "url": "https://github.com/MicrosoftCloudEssentials-LearningHub/MySQL-autoscale-IOPS",
+      "fullName": "Cloud2BR-MSFTLearningHub/MySQL-autoscale-IOPS",
+      "url": "https://github.com/Cloud2BR-MSFTLearningHub/MySQL-autoscale-IOPS",
       "description": "Quick overview of what IOPS means in a MySQL server and explore a few example scripts to configure it ",
       "topics": [
         "automation",

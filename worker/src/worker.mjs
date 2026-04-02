@@ -1,4 +1,4 @@
-const DEFAULT_ORG = 'MicrosoftCloudEssentials-LearningHub';
+const DEFAULT_ORG = 'Cloud2BR-MSFTLearningHub';
 
 const DEFAULT_TRANSLATOR_ENDPOINT = 'https://api.cognitive.microsofttranslator.com';
 
@@ -342,7 +342,7 @@ export default {
     const url = new URL(request.url);
 
     if (request.method === 'GET' && url.pathname === '/health') {
-      return json({ ok: true, service: 'org-catalog-auth' });
+      return json({ ok: true, service: 'Cloud2BR-MSFTLearningHub-auth' });
     }
 
     if (request.method === 'GET' && url.pathname === '/login') {

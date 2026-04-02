@@ -34,7 +34,7 @@ jobs:
 
       - name: Generate docs/catalog.json
         env:
-          ORG_NAME: MicrosoftCloudEssentials-LearningHub
+          ORG_NAME: Cloud2BR-MSFTLearningHub
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           AZURE_TRANSLATOR_KEY: ${{ secrets.AZURE_TRANSLATOR_KEY }}
           AZURE_TRANSLATOR_REGION: ${{ secrets.AZURE_TRANSLATOR_REGION }}
